@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Special Elite';
+}
+a {
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%; 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/* Hero Section */
+#hero{
+    background-image: url(./img/to-the-sky-qu.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: transparent;
+    letter-spacing: .2rem;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+#hero h1:nth-child(1){
+    animation-delay: 1.5s;
+}
+
+#hero h1:nth-child(2){
+    animation-delay: 2.5s;
+}
+
+#hero h1:nth-child(3){
+    animation-delay: 3.5s;
+}
+
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+#hero h1:nth-child(1) span{
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3) span{
+    animation-delay: 3s;
+}
+
+
+#hero .cta{
+    display: inline-block;
+    padding: 20px 30px;
+    color:white;
+    background-color: transparent;
+    border: 4px solid white;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    margin-top: 20px;
+    transition: .3s ease;
+    box-shadow: 0px 0px 10px 0 whitesmoke;
+}
+#hero .cta:hover{
+    color:black;
+    background-color: white;
+}
+
+/* End of Hero Section */
+
+/* About Section */
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 20px 20px;
+}
+
+#about .col-left {
+    width: 360px;
+    height: 360px;
+}
+
+#about .col-right {
+    width: 100%;
+}
+
+#about .col-right h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p{
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+#about .cta{
+    display: inline-block;
+    padding: 20px 30px;
+    color:black;
+    background-color: transparent;
+    border: 4px solid black;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: .3s ease;
+    box-shadow: 0px 0px 10px 0 gray;
+}
+
+#about .cta:hover{
+    color: white;
+    background-color: black;
+}
+
+#about .col-left .about-img{
+    height: 110%;
+    padding: 20px;
+    position: relative;
+    border: 3px solid black;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px 0 gray;
+}
+
+#about .section-title{
+    font-size: 5rem;
+    font-weight: 300;
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* End About Section */
+
+/* Contact Section */
+#contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact .contact-items{
+    width: 100%;
+}
+
+#contact .contact-item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px 0 gray;
+}
+
+#contact .section-title{
+    font-size: 5rem;
+    font-weight: 300;
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+#contact .github .cta{
+    display: inline-block;
+    padding: 20px 30px;
+    color:black;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 4px solid black;
+    letter-spacing: .2rem;
+    margin-top: 20px;
+
+    transition: .3s ease;
+}
+
+#contact .github .cta:hover{
+    color: white;
+    background-color: black;
+}
+
+#contact .linkedin .cta{
+    display: inline-block;
+    padding: 20px 30px;
+    color:black;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 4px solid black;
+    letter-spacing: .2rem;
+    margin-top: 20px;
+
+    transition: .3s ease;
+}
+
+#contact .linkedin .cta:hover{
+    color: white;
+    background-color: black;
+}
+
+#contact .email h2{
+    display: inline-block;
+    padding: 20px 30px;
+    color:black;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 4px solid black;
+    letter-spacing: .2rem;
+    margin-top: 20px;
+
+    transition: .3s ease;
+}
+
+#contact .email h2:hover{
+    color: white;
+    background-color: black;
+}
+
+
+/* End Contact Section */
+
+
+/* Keyframes */
+@keyframes text_reveal_box{
+50%{
+    width: 100%;
+    left: 0;
+}   
+100%{
+    width: 0;
+    left: 100%;
+}
+}
+
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+/* End Keyframes */
+
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 760px){
+    #hero .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+
+    h1 .section-title{
+        font-size: 6rem;
+
+    }
+
+    #hero h1{
+        font-size: 7rem;
+    }
+
+    #about .about{
+        flex-direction: row;
+        text-align: left;
+    }
+
+    #about .col-right h2{
+        margin-left: 30px;
+    }
+
+    #about .section-title{
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    #about .cta{
+        font-size: 2.5rem;
+        padding: 20px 20px;
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    #about .col-left{
+        width: 600px;
+        height: 400px;
+    }
+
+    #contact .contact-items{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+
+/* End Media Query for Tablet */
